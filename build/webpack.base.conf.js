@@ -30,7 +30,9 @@ module.exports = {
       {
         test: /\.vue$/,
         loader: 'vue-loader',
-        options: vueLoaderConfig
+        options: {
+          postcss: [require('postcss-mixins','postcss-cssnext')()],
+        }
       },
       {
         test: /\.js$/,

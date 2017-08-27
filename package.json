@@ -12,9 +12,9 @@
   "dependencies": {
     "install": "^0.10.1",
     "npm": "^5.3.0",
-    "postcss-custom-selectors": "^4.0.1",
     "vue": "^2.3.3",
-    "vue-router": "^2.6.0"
+    "vue-router": "^2.6.0",
+    "vue-style-loader": "^3.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -39,9 +39,9 @@
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
-    "postcss-color-function": "^4.0.0",
+    "postcss": "^6.0.9",
     "postcss-cssnext": "^3.0.2",
-    "postcss-nesting": "^4.1.0",
+    "postcss-mixins": "^6.1.0",
     "rimraf": "^2.6.0",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",

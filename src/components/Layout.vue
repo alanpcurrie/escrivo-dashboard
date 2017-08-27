@@ -12,7 +12,19 @@ export default {
 
 
 
-<style lang="postcss">
+<style>
+
+/*--------------------------------------------------------------
+CSS Variables
+--------------------------------------------------------------*/
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-grey:#D3D3D3;
+  --color-orange:#FC4B1F;
+  --color-green:#1BAF54;
+}
 
 /*--------------------------------------------------------------
 CSS Reset
@@ -24,7 +36,7 @@ html {
     font-family: Ubuntu, sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%; 
-    background-color: offwhite;
+    background-color: var(--color-white);
 }
 
 
@@ -33,7 +45,7 @@ body {
   padding: 1em;
   min-height: 100vmax;
   overflow-x: hidden;
-  border: 3px solid lightgrey;
+  border: 3px solid var(--color-grey);
 }
 
 h1, h2 {
@@ -228,7 +240,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-    border: 1px solid #c0c0c0;
+    border: 1px solid var(--color-grey);
     margin: 0 2px;
     padding: 0.35em 0.625em 0.75em;
 }
@@ -254,5 +266,99 @@ table {
 td,
 th {
     padding: 0;
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	// margin-bottom: 1.5em;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: var(--color-grey);
+	font-family: monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px  monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 75%;
+}
+
+big {
+	font-size: 125%;
 }
 </style>
