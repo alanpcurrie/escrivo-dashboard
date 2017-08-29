@@ -3,7 +3,7 @@
         <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Making time for personal development
                 </h3>
                 <h3 class="m-card__text">
                     To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
@@ -20,11 +20,12 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Increasing knowledge sharing around the business
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
-                </h3>
+                    To ensure that we maximise the value of learning that happens in the business, we need
+                    to actively look for opportunities to share knowledge around the business.
+              </h3>
             </div>
             <div class="m-card--author">
                 <p class = "m-card--author__text">Alasdair</p>
@@ -37,10 +38,11 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Set sales targets and high-level budgets for the next three years
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
+                To ensure that we have tangible targets and to ensure that we can plan
+                financially for growth, we need to set out our targets in financial terms.
                 </h3>
             </div>
             <div class="m-card--author">
@@ -53,10 +55,11 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Build a financial dashboard
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
+                    To help us visualise the progrss being made on our financial targes,
+                    we need to create a financial dashboard. 
                 </h3>
             </div>
             <div class="m-card--author">
@@ -69,10 +72,12 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Focus on improving client experiences
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
+                    To ensure that we can meet our ambition to focus on client in everyhting that we do,
+                    we will begin by identifying and auditing client touchpoints and working to improve 
+                    at least 3 of those.
                 </h3>
             </div>
             <div class="m-card--author">
@@ -85,10 +90,12 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Build a market visibility plan
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
+                    For too long, we've been "under the radar" with respect to marketing our services to 
+                    marketing our services to our target audiences. We need to find ways to make ourselves
+                    more visibile to our markets.
                 </h3>
             </div>
             <div class="m-card--author">
@@ -101,10 +108,12 @@
             <div class="m-card__row">
             <div class="m-card">
                 <h3 class="m-card__title">
-                    making time for personal development
+                    Making Quarterley objectives visible
                 </h3>
                 <h3 class="m-card__text">
-                    To ensure we find ways to continually improve ourselves and our capability, we need to make time for personal development and training.
+                    Our quarterley objectives are the smaller projects that add up to implement our annual 
+                    and 3-year goals. To make sure we all know what's being done, we need to make our quarterley
+                    objectives more visible to everyone.
                 </h3>
             </div>
             <div class="m-card--author">
@@ -120,10 +129,10 @@
 </template>
 
 <script>
-export default {
-    name: 'card',
+    export default {
+        name: 'card',
 
-}
+    }
 
 </script>
 
@@ -224,11 +233,19 @@ export default {
     font-family: Montserrat, sans-serif;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 
+    &:hover span {
+            transform: translate(1px, 1px);
+    }
+
+        &:focus span {
+            transform:  2px dashed var(--color-orange);
+    }
+
+     &:active span {
+            transform: translate(4px, 4px);
+    }
 }
 
-.a-btn--no-status:hover {
-   
-}
 
 .a-btn--needs-work {
     min-width: 150px;;

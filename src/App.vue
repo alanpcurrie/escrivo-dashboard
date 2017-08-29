@@ -45,9 +45,9 @@ export default {
 
 
 .m-header__logo {
-  // grid-column-start: 1;
-  // grid-column-end: 2;
-  // grid-column: 1/2;
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-column: 1/2; */
   grid-area: m-header__logo;
   grid-column: [m-header__logo-start] / [m-header__logo-end] ;
   height: auto;
@@ -59,8 +59,8 @@ export default {
 
 
 .m-header__tagline {
-  // grid-column-start: 3;
-  // grid-column-end: 4;
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
   grid-column: 3/4;
   padding: 1rem;
 }
